@@ -6,23 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
     <script src="https://kit.fontawesome.com/914efae9b6.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>inToken | Back Your Creators</title>
 </head>
 <body>
+
+    <!-- Header & Homepage -->
     <section class="showcase">
         <header>
             <div class="logo-container">
                 <a href="#"><img class="logo" src="/images/logo.png" alt="inToken"></a>
-
             </div>
-            <div class="toggle"></div>
 
+            <div id='content'>
+                <span class='slide'>
+                    <a href='#' onclick="openSlideMenu()">
+                        <i class="fas fa-bars"></i>
+                    </span>
+        
+                    <div id='menu' class='nav'>
+                        <a href="#" class="close" onclick="closeSlideMenu()">
+                            <i class="fas fa-times"></i>
+                        </a>
+        
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Product</a>
+                        <a href="#">Contact</a>
+        
+            </div>
+            </div>
         </header>
 
-        <video src="/images/black.mp4" muted loop autoplay></video>
+        <!-- <div class="overlay"></div> -->
 
-        <div class="overlay"></div>
+        <video src="/images/black.mp4" playsinline muted loop autoplay></video>
+
 
         <div class="text">
             <h2>Back Your</h2>
@@ -61,14 +84,22 @@
         <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
         
     </section>
-    <div class="menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
+
+<!-- About Section -->
+<section class="about">
+
+
+    <blockquote>About<span class="about-span"></span></blockquote>
+    <p>We are you! Friends with a passion for all things “yet to come” and “off the beaten track”.
+        All honest. All Authentic. We are creating a movement to bring creators even closer to their supporters.</p>
+        <br>
+        <p>Creators are some of the most inspirational people on the planet, we want to make sure that they and their supporters can continue to make the world a more colourful place.</p>
+     <img id="office" class='about-image-1' src="images/about-2.jpg">
+    <img id="building" class='about-image-2' src="images/about-1.jpg">
+    <div id="box"></div>
+  </section>
+
+
     <script src="index.js"></script>
 </body>
 </html>
