@@ -7,6 +7,10 @@
   --font-primary: 'Space Grotesk', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -30,17 +34,16 @@
   right: 0%;
   background-color: #fff;
   overflow-x: hidden;
-  padding-top: 60px;
+  padding-top: 185px;
   transition: 0.7s;
 }
 
 .nav a {
   display: block;
-  padding: 20px 30px;
   text-align: center;
   font-size: 25px;
   text-decoration: none;
-  line-height: 3.8em;
+  line-height: 3em;
   color: #111;
 }
 
@@ -51,8 +54,8 @@
 
 .nav .close {
   position: absolute;
-  top: 15px;
-  right: 22px;
+  top: 40px;
+  right: 49px;
   margin-left: 10px;
   font-size: 23px;
 }
@@ -67,7 +70,7 @@
   right: 0;
   width: 100%;
   min-height: 100vh;
-  padding: 100px;
+  padding: 110px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -81,7 +84,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 100px;
+  padding: 25px 100px;
   z-index: 10;
   display: flex;
   align-items: center;
@@ -92,7 +95,6 @@ header {
   cursor: pointer;
   position: relative;
   left: -50px;
-  top: 10px;
 }
 
 .logo {
@@ -147,6 +149,9 @@ header {
   width: 490px;
 }
 
+/* <------------------------------------------------------------> */
+
+/* Contact Link */
 .contact-container {
   position: fixed;
   bottom: 30px;
@@ -178,6 +183,8 @@ header {
   width: 100%;
   transition: width 0.3s;
 }
+
+/* <------------------------------------------------------------> */
 
 /* SOCIAL ICONS */
 .social {
@@ -240,6 +247,8 @@ header {
   color: var(--overlay-color);
 }
 
+/* <------------------------------------------------------------> */
+
 /* HOME IMAGES */
 .images {
   position: absolute;
@@ -293,29 +302,41 @@ header {
   height: 230px;
 }
 
+/* <------------------------------------------------------------> */
+
 /* ABOUT SECTION */
 
 .about {
   height: 100vh;
-
   position: relative;
   box-sizing: border-box;
   color: #fff;
 }
 
-blockquote {
+.about-quote {
   font-size: 2.3em;
   width: 30%;
-  margin-top: 17%;
+  margin-top: 7%;
+  left: 14%;
   position: absolute;
+}
+
+.about-quote p {
+  font-size: 0.5em;
+  font-family: var(--font-primary);
+}
+
+.about-quote p:nth-of-type(2) {
+  margin-top: -25px;
 }
 
 .about-span {
   width: 100%;
-  background: red;
+  background: #fff;
   display: block;
   height: 5px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .about img {
@@ -324,15 +345,15 @@ blockquote {
 
 .about img:nth-of-type(1) {
   width: 40%;
-  right: 0;
-  top: 20%;
+  right: 9%;
+  top: 14%;
 }
 
 .about img:nth-of-type(2) {
   width: 25%;
-  right: 40%;
-  top: 29%;
-  margin-top: 15%;
+  right: 49%;
+  top: 33%;
+  margin-top: 16%;
 }
 
 .percentage {
@@ -341,17 +362,103 @@ blockquote {
   left: 10px;
 }
 
-#box {
-  width: 100px;
-  height: 100px;
+#box1 {
+  width: 80px;
+  height: 80px;
   position: absolute;
-  border: 5px solid lightgray;
+  border: 5px solid rgba(177, 177, 177, 0.589);
   margin: auto;
-  top: 0;
+  top: 2%;
   left: 0;
   bottom: 0;
-  right: 0;
+  right: 18%;
 }
+
+/* <------------------------------------------------------------> */
+
+/* PRODUCT SECTION */
+.product {
+  height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.product-quote {
+  font-size: 2.3em;
+  width: 30%;
+  margin-top: 7%;
+  left: 14%;
+  position: absolute;
+}
+
+.product-quote p {
+  font-size: 0.5em;
+  font-family: var(--font-primary);
+}
+
+.product-quote p:nth-of-type(2) {
+  margin-top: 10px;
+}
+
+.product-span {
+  width: 100%;
+  background: #fff;
+  display: block;
+  height: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.product img {
+  position: absolute;
+}
+
+.product img:nth-of-type(1) {
+  width: 40%;
+  right: 12.7%;
+  top: 9.5%;
+}
+
+.product img:nth-of-type(2) {
+  width: 28%;
+  right: 6%;
+  top: 22%;
+  margin-top: 16%;
+}
+
+.percentage {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#box2 {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  border: 5px solid rgba(177, 177, 177, 0.589);
+  margin: auto;
+  top: 5%;
+  left: 0;
+  bottom: 0;
+  right: 18%;
+}
+
+/* <------------------------------------------------------------> */
+
+/* CONTACT SECTION */
+.contact {
+  height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* <------------------------------------------------------------> */
 
 /* DOWN SCROLL ARROW */
 .ca3-scroll-down-arrow.active {
@@ -432,6 +539,8 @@ html body [data-ca3_iconfont='ETmodules']::before {
     opacity: 0;
   }
 }
+
+/* <------------------------------------------------------------> */
 
 /* MEDIA QUERIES */
 @media (max-width: 798px) {
