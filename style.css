@@ -9,6 +9,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 * {
@@ -34,7 +35,7 @@ html {
   right: 0%;
   background-color: #fff;
   overflow-x: hidden;
-  padding-top: 185px;
+  padding-top: 265px;
   transition: 0.7s;
 }
 
@@ -58,11 +59,13 @@ html {
   right: 49px;
   margin-left: 10px;
   font-size: 23px;
+  cursor: pointer;
 }
 
 .slide a {
   color: #fff;
   font-size: 25px;
+  cursor: pointer;
 }
 
 .showcase {
@@ -456,6 +459,69 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: left;
+}
+
+.card {
+  margin-left: 80px;
+}
+
+.card h2 {
+  font-size: 5.5em;
+  font-weight: 700;
+  line-height: 1.1em;
+  text-transform: uppercase;
+  /* text-align: center; */
+  z-index: 10;
+}
+
+.card h5 {
+  font-size: 1em;
+  opacity: 0.6;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-left: 3px;
+}
+
+.card p {
+  font-family: var(--font-primary);
+  margin-top: 40px;
+  width: 92%;
+  opacity: 0.9;
+}
+
+.email a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: var(--font-primary);
+}
+
+.contact-socials {
+  margin-left: 100px;
+}
+
+.contact-socials h5 {
+  font-size: 1em;
+  opacity: 0.6;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-left: 3px;
+}
+
+.contact-socials-word {
+  list-style-type: none;
+  line-height: 30px;
+}
+
+.social-word a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4em;
+  margin-left: 3px;
+  font-weight: 300;
 }
 
 /* <------------------------------------------------------------> */

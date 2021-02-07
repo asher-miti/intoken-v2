@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/914efae9b6.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
@@ -24,19 +25,20 @@
 
             <div id='content'>
                 <span class='slide'>
-                    <a href='#' onclick="openSlideMenu()">
+                    <a onclick="openSlideMenu()">
                         <i class="fas fa-bars"></i>
+                        </a>
                     </span>
         
                     <div id='menu' class='nav'>
-                        <a href="#" class="close" onclick="closeSlideMenu()">
+                        <a class="close" onclick="closeSlideMenu()">
                             <i class="fas fa-times"></i>
                         </a>
         
                         <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Product</a>
-                        <a href="#">Contact</a>
+                        <a href="#about">About</a>
+                        <a href="#product">Product</a>
+                        <a href="#contact">Contact</a>
         
             </div>
             </div>
@@ -52,6 +54,8 @@
             <h2>creators</h2>
             <p>inToken is a platform that gives you the chance to join your favourite creators’ journey from a whole new angle, whereby their success truly becomes your success as well.</p>
         </div>
+
+        <!-- <button style='color: white; z-index: 1000;' onclick="scrollWin()">Click me to scroll horizontally!</button> -->
 
         <div class="images">
             <div class="image1">
@@ -77,16 +81,16 @@
         </ul>
     
     <div class="contact-container">
-        <a class="cool-link" href="#">Contact</a>
+        <a class="cool-link" href="#contact">Contact</a>
     </div>
 
     <!-- Scroll arrow -->
-        <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+        <a href='#about' class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
         
     </section>
 
 <!-- About Section -->
-<section class="about">
+<section id='about' class="about">
 
 
     <blockquote class='about-quote'>About<span class="about-span"></span>
@@ -101,7 +105,7 @@
   </section>
 
   <!-- Product Section -->
-<section class="product">
+<section id='product' class="product">
 
     <blockquote class='product-quote'>Product<span class="product-span"></span>
         <p>inToken's are designed to be an additional way for Content Creators and their supporters to engage. Currently we see various ‘Pay for exclusive content’ ‘Pay for access to chat-rooms’ and even ‘Pay for virtual stickers’. We want to bring something a little more meaningful to the relationship.<p>
@@ -115,11 +119,40 @@
         <div id="box2"></div>
   </section>
 
-  <section class="contact">
-      <h1>Contact Message Here</h1>
+  <section id='contact'class="contact">
+    <div class="card" data-aos="fade-right">
+      <h5>Got any Questions?</h5>
+      <h2>Get in touch</h2>
+      <p>
+        You can always reach us through <span class='email'><a href='admin@in-token.io'>admin@in-token.io</a></span> for any questions you may have, or if you're just interested in a chat to learn more, we'd love to hear from you.
+      </p>
+    </div>
+      <div class="card" data-aos="fade-left">
+        <img src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8b2ZmaWNlJTIwdGVhbXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" />
+        <div>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe harum animi qui rem quis, amet deleniti reiciendis numquam sed exercitationem, maxime necessitatibus natus quas iusto, ducimus ab laudantium esse dolorum!
+          </p>
+          <div class="contact-socials">
+              <h5>Follow us here</h5>
+              <ul class="contact-socials-word">
+                <li class="social-word"><a href='#'>Facebook</a></li>
+                <li class="social-word"><a href='#'>Instagram</a></li>
+                <li class="social-word"><a href='#'>TikTok</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
   </section>
 
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 400,
+        duration: 1000,
+    });
+  </script>
     <script src="index.js"></script>
 </body>
 </html>
