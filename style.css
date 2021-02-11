@@ -454,19 +454,30 @@ header {
 .contact {
   height: 100vh;
   position: relative;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   color: #fff;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   text-align: left;
 }
 
-.card {
+.card1 {
   margin-left: 80px;
+  width: 60%;
 }
 
-.card h2 {
+.card2 {
+  position: absolute;
+  right: 10%;
+  width: 40%;
+}
+
+.card2 img {
+  width: 75%;
+}
+
+.card1 h2 {
   font-size: 5.5em;
   font-weight: 700;
   line-height: 1.1em;
@@ -475,7 +486,7 @@ header {
   z-index: 10;
 }
 
-.card h5 {
+.card1 h5 {
   font-size: 1em;
   opacity: 0.6;
   text-transform: uppercase;
@@ -484,10 +495,11 @@ header {
   margin-left: 3px;
 }
 
-.card p {
+.card1 p {
   font-family: var(--font-primary);
   margin-top: 40px;
-  width: 92%;
+  width: 60%;
+  font-size: 1.2em;
   opacity: 0.9;
 }
 
@@ -496,6 +508,11 @@ header {
   font-weight: bold;
   text-decoration: none;
   font-family: var(--font-primary);
+}
+
+.card2 p {
+  font-family: var(--font-primary);
+  opacity: 0.9;
 }
 
 .contact-socials {
@@ -508,7 +525,7 @@ header {
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 2px;
-  margin-left: 3px;
+  margin: 20px 0px 20px 3px;
 }
 
 .contact-socials-word {
@@ -516,10 +533,15 @@ header {
   line-height: 30px;
 }
 
+.social-word {
+  margin-top: 4px;
+}
+
 .social-word a {
   text-decoration: none;
   color: white;
-  font-size: 1.4em;
+  font-size: 1.6em;
+  letter-spacing: 1px;
   margin-left: 3px;
   font-weight: 300;
 }
