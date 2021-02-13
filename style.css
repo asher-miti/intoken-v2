@@ -272,7 +272,7 @@ header {
 
 .image2 {
   position: relative;
-  left: 30px;
+  left: 38px;
   top: 235px;
 }
 
@@ -463,18 +463,19 @@ header {
 }
 
 .card1 {
-  margin-left: 80px;
-  width: 60%;
+  margin-left: 100px;
+  width: 36%;
+  margin-top: 30px;
 }
 
 .card2 {
   position: absolute;
-  right: 10%;
-  width: 40%;
+  left: 52%;
+  top: 13%;
 }
 
 .card2 img {
-  width: 75%;
+  width: 62%;
 }
 
 .card1 h2 {
@@ -483,7 +484,6 @@ header {
   line-height: 1.1em;
   text-transform: uppercase;
   /* text-align: center; */
-  z-index: 10;
 }
 
 .card1 h5 {
@@ -497,26 +497,32 @@ header {
 
 .card1 p {
   font-family: var(--font-primary);
-  margin-top: 40px;
-  width: 60%;
   font-size: 1.2em;
-  opacity: 0.9;
+  opacity: 0.7;
+  display: inline;
 }
 
-.email a {
+.p1 {
+  margin-top: 40px;
+}
+
+.p1 a {
   color: #fff;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-decoration: none;
   font-family: var(--font-primary);
+  font-size: 1.2em;
+}
+
+.card2-container {
+  margin-top: 30px;
 }
 
 .card2 p {
   font-family: var(--font-primary);
-  opacity: 0.9;
-}
-
-.contact-socials {
-  margin-left: 100px;
+  opacity: 0.7;
+  font-size: 1.2em;
+  width: 71%;
 }
 
 .contact-socials h5 {
@@ -525,7 +531,7 @@ header {
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 2px;
-  margin: 20px 0px 20px 3px;
+  margin: 30px 0px 20px 3px;
 }
 
 .contact-socials-word {
@@ -533,17 +539,51 @@ header {
   line-height: 30px;
 }
 
-.social-word {
-  margin-top: 4px;
-}
-
-.social-word a {
+.social-link {
   text-decoration: none;
-  color: white;
-  font-size: 1.6em;
+  color: rgb(233, 233, 233);
+  font-size: 1.7em;
   letter-spacing: 1px;
   margin-left: 3px;
   font-weight: 300;
+}
+
+.social-word {
+  transition: all 0.2s ease-in;
+  margin-top: 13px;
+}
+
+.social-word:active {
+  color: black;
+}
+
+.social-word:hover {
+  transform: translateY(-1px);
+}
+
+.social-link:hover {
+  color: #fff;
+}
+
+/* <------------------------------------------------------------> */
+
+/* FOOTER SECTION */
+.footer {
+  height: 30vh;
+  position: relative;
+  /* box-sizing: border-box; */
+  color: #fff;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: left;
+  background-color: black;
+}
+
+.footer-logo {
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: -50px;
 }
 
 /* <------------------------------------------------------------> */
