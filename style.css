@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700');
 
 :root {
-  --overlay-color: rgb(105, 104, 104);
+  --overlay-color: rgb(33, 33, 33);
   --font-secondary: 'Oxygen', sans-serif;
   --font-primary: 'Space Grotesk', sans-serif;
 }
@@ -35,22 +35,23 @@ html {
   right: 0%;
   background-color: #fff;
   overflow-x: hidden;
-  padding-top: 265px;
+  padding-top: 230px;
   transition: 0.7s;
 }
 
 .nav a {
   display: block;
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   text-decoration: none;
   line-height: 3em;
-  color: #111;
+  color: var(--overlay-color);
 }
 
 .nav a:hover {
-  color: var(--overlay-color);
+  color: #000;
   transition: 0.4s;
+  transform: translateY(-1px);
 }
 
 .nav .close {
@@ -452,7 +453,7 @@ header {
 
 /* CONTACT SECTION */
 .contact {
-  height: 100vh;
+  height: 115vh;
   position: relative;
   /* box-sizing: border-box; */
   color: #fff;
@@ -465,13 +466,14 @@ header {
 .card1 {
   margin-left: 100px;
   width: 36%;
-  margin-top: 30px;
+  position: absolute;
+  top: 29.5%;
 }
 
 .card2 {
   position: absolute;
   left: 52%;
-  top: 13%;
+  top: 10%;
 }
 
 .card2 img {
@@ -498,7 +500,7 @@ header {
 .card1 p {
   font-family: var(--font-primary);
   font-size: 1.2em;
-  opacity: 0.7;
+  opacity: 0.9;
   display: inline;
 }
 
@@ -508,19 +510,19 @@ header {
 
 .p1 a {
   color: #fff;
-  /* font-weight: bold; */
+  font-weight: 500;
   text-decoration: none;
   font-family: var(--font-primary);
   font-size: 1.2em;
 }
 
 .card2-container {
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
 .card2 p {
   font-family: var(--font-primary);
-  opacity: 0.7;
+  opacity: 0.9;
   font-size: 1.2em;
   width: 71%;
 }
@@ -569,21 +571,65 @@ header {
 
 /* FOOTER SECTION */
 .footer {
-  height: 30vh;
-  position: relative;
-  /* box-sizing: border-box; */
+  height: 100vh;
   color: #fff;
-  display: flex;
-  /* justify-content: center; */
+  position: relative;
+  padding: 55px;
+  margin-top: 40px;
+}
+
+.logo-box {
+  grid-template-columns: 1fr max-content 1fr;
+  grid-column-gap: 1.5rem;
   align-items: center;
-  text-align: left;
-  background-color: black;
+  margin-bottom: 2rem;
+  display: grid;
+}
+
+.logo-box::before,
+.logo-box::after {
+  content: '';
+  height: 1px;
+  display: block;
+  background-color: rgb(233, 233, 233);
+  opacity: 0.5;
 }
 
 .footer-logo {
-  cursor: pointer;
-  margin: 0 auto;
-  margin-top: -50px;
+  width: 12rem;
+  height: auto;
+}
+
+.footer-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 14%;
+  text-align: center;
+  line-height: 6rem;
+}
+
+.footer-links {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  font-weight: 500;
+  opacity: 0.8;
+  font-size: 3.8rem;
+}
+
+.footer-item:hover {
+  transform: translateY(-1px);
+}
+
+.footer-links:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+.footer-item {
 }
 
 /* <------------------------------------------------------------> */
