@@ -45,19 +45,21 @@ html {
   font-size: 30px;
   text-decoration: none;
   line-height: 3em;
-  color: var(--overlay-color);
+  color: #000;
+  opacity: 0.8;
 }
 
 .nav a:hover {
   color: #000;
   transition: 0.4s;
   transform: translateY(-1px);
+  opacity: 1;
 }
 
 .nav .close {
   position: absolute;
-  top: 40px;
-  right: 49px;
+  top: 25px;
+  right: 59px;
   margin-left: 10px;
   font-size: 23px;
   cursor: pointer;
@@ -406,7 +408,7 @@ header {
 }
 
 .product-span {
-  width: 100%;
+  width: 98%;
   background: #fff;
   display: block;
   height: 5px;
@@ -453,7 +455,7 @@ header {
 
 /* CONTACT SECTION */
 .contact {
-  height: 115vh;
+  height: 105vh;
   position: relative;
   /* box-sizing: border-box; */
   color: #fff;
@@ -591,7 +593,7 @@ header {
   content: '';
   height: 1px;
   display: block;
-  background-color: rgb(233, 233, 233);
+  background-color: rgba(255, 255, 255, 0.5);
   opacity: 0.5;
 }
 
@@ -629,7 +631,69 @@ header {
   opacity: 1;
 }
 
-.footer-item {
+.subscribe {
+  width: 43%;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.subscribe p {
+  font-family: var(--font-primary);
+  opacity: 0.9;
+  font-size: 1.2em;
+  width: 451px;
+  position: absolute;
+  left: 8%;
+  margin-top: 10px;
+}
+
+.subscribe h5 {
+  font-size: 2.3em;
+  /* opacity: 0.6; */
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+  margin-top: 70px;
+}
+
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 35px 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #fff;
+  transition: 0.5s;
+  font-size: 1em;
+}
+.contact-form-text:focus {
+  box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.5);
+  opacity: 0.7;
+}
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
+}
+
+.copyright-container {
+  position: absolute;
+  bottom: 40px;
+  text-align: center;
+  width: 94%;
+}
+
+.copyright {
+  font-family: var(--font-secondary);
 }
 
 /* <------------------------------------------------------------> */
