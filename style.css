@@ -282,7 +282,6 @@ header {
 
 .image3 img {
   width: 300px;
-  height: 170px;
   opacity: 0.9;
 }
 
@@ -295,7 +294,7 @@ header {
 .image4 img {
   width: 170px;
   opacity: 0.9;
-  height: 230px;
+  /* height: 230px; */
 }
 
 /* <------------------------------------------------------------> */
@@ -562,7 +561,7 @@ header {
 /* <------------------------------------------------------------> */
 
 /* FOOTER SECTION */
-.footer {
+/* .footer {
   height: 100vh;
   color: #fff;
   position: relative;
@@ -639,7 +638,6 @@ header {
 
 .subscribe h5 {
   font-size: 2.3em;
-  /* opacity: 0.6; */
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 2px;
@@ -673,7 +671,7 @@ header {
 textarea.contact-form-text {
   resize: none;
   height: 120px;
-}
+} */
 
 .copyright-container {
   position: absolute;
@@ -802,20 +800,65 @@ html body [data-ca3_iconfont='ETmodules']::before {
     right: 8.5%;
   }
   .text h2 {
-    font-size: 3.8em;
+    font-size: 3.4em;
   }
 
   .text p {
     width: 300px;
     margin-top: 40px;
+    font-size: 1.1em;
   }
 
   .images {
-    display: none;
+    /* display: none; */
+  }
+
+  .image1 img {
+    width: 111px;
+  }
+
+  .image1 {
+    left: -90px;
+    top: -16px;
+  }
+
+  .image2 img {
+    width: 177px;
+  }
+
+  .image2 {
+    left: -88px;
+    top: 321px;
+  }
+
+  .image3 img {
+    width: 198px;
+  }
+
+  .image3 {
+    left: 50px;
+    top: -271px;
+  }
+
+  .image4 {
+    left: 113px;
+    top: 15px;
+  }
+
+  .image4 img {
+    width: 130px;
   }
 
   .ca3-scroll-down-link {
     bottom: 100px;
+  }
+
+  .contact-container {
+    display: none;
+  }
+
+  .social {
+    display: none;
   }
 
   /* ABOUT */
@@ -890,6 +933,49 @@ html body [data-ca3_iconfont='ETmodules']::before {
 
   #box2 {
     display: none;
+  }
+
+  /* CONTACT */
+
+  .card1 {
+    margin-left: 40px;
+    width: 81%;
+    top: 14%;
+  }
+  .card1 h2 {
+    font-size: 2.7em;
+  }
+
+  .card2 img {
+    display: none;
+  }
+
+  .p1 {
+    margin-top: 25px;
+  }
+
+  .card1 p {
+    font-size: 1em;
+  }
+
+  .p1 a {
+    font-size: 1em;
+  }
+
+  .card2 {
+    left: 11%;
+    top: 38%;
+  }
+
+  .card2 p {
+    font-size: 1em;
+    font-weight: 500;
+  }
+
+  /* COPYRIGHT */
+  .copyright-container {
+    bottom: -75px;
+    width: 125%;
   }
 }
 
