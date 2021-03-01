@@ -301,7 +301,7 @@ header {
 
 /* ABOUT SECTION */
 
-.about {
+.about-section {
   height: 100vh;
   position: relative;
   box-sizing: border-box;
@@ -334,17 +334,17 @@ header {
   margin-bottom: 20px;
 }
 
-.about img {
+.about-section img {
   position: absolute;
 }
 
-.about img:nth-of-type(1) {
+.about-section img:nth-of-type(1) {
   width: 40%;
   right: 9%;
   top: 14%;
 }
 
-.about img:nth-of-type(2) {
+.about-section img:nth-of-type(2) {
   width: 25%;
   right: 49%;
   top: 33%;

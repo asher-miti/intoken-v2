@@ -30,11 +30,11 @@ tl2.to('#box1', 0.5, {
 });
 
 const scene = new ScrollMagic.Scene({
-  triggerElement: '.about',
+  triggerElement: '.about-section',
   triggerHook: 'onLeave',
-  duration: '100%',
+  duration: 0,
 })
-  .setPin('.about')
+  // .setPin('.about')
   .setTween(tl)
   .addTo(controller);
 
@@ -45,7 +45,7 @@ const scene2 = new ScrollMagic.Scene({
   .addTo(controller);
 
 function updatePercentage() {
-  //percent.innerHTML = (tl.progress() *100 ).toFixed();
+  // percent.innerHTML = (tl.progress() * 100).toFixed();
   tl.progress();
   console.log(tl.progress());
 }
@@ -73,9 +73,9 @@ tl2p.to('#box2', 0.5, {
 const scene3 = new ScrollMagic.Scene({
   triggerElement: '.product',
   triggerHook: 'onLeave',
-  duration: '100%',
+  duration: 0,
 })
-  .setPin('.product')
+  // .setPin('.product')
   .setTween(tlp)
   .addTo(controller);
 
@@ -90,7 +90,3 @@ function updatePercentage() {
   tlp.progress();
   console.log(tlp.progress());
 }
-
-// function scrollWin() {
-//   window.scrollBy(0, 1400);
-// }
