@@ -1,4 +1,5 @@
 // Burger Menu
+
 function openSlideMenu() {
   document.getElementById('menu').style.width = '300px';
   document.getElementById('content').style.marginLeft = '250px';

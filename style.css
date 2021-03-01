@@ -458,7 +458,7 @@ header {
   margin-left: 100px;
   width: 36%;
   position: absolute;
-  top: 29.5%;
+  top: 31%;
 }
 
 .card2 {
@@ -556,6 +556,20 @@ header {
 
 .social-link:hover {
   color: #fff;
+}
+
+.copyright-container {
+  position: absolute;
+  margin-top: 53px;
+  text-align: center;
+  width: 94%;
+}
+
+.copyright-container p {
+  font-family: var(--font-secondary);
+  font-size: 1em;
+  opacity: 0.6;
+  font-weight: 300;
 }
 
 /* <------------------------------------------------------------> */
@@ -672,17 +686,6 @@ textarea.contact-form-text {
   resize: none;
   height: 120px;
 } */
-
-.copyright-container {
-  position: absolute;
-  bottom: 40px;
-  text-align: center;
-  width: 94%;
-}
-
-.copyright {
-  font-family: var(--font-secondary);
-}
 
 /* <------------------------------------------------------------> */
 
@@ -955,27 +958,36 @@ html body [data-ca3_iconfont='ETmodules']::before {
   }
 
   .card1 p {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   .p1 a {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   .card2 {
     left: 11%;
-    top: 38%;
+    top: 41%;
   }
 
   .card2 p {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 500;
+    width: 90%;
   }
 
-  /* COPYRIGHT */
   .copyright-container {
-    bottom: -75px;
-    width: 125%;
+    position: absolute;
+    top: 245%;
+    font-size: 0.8em;
+  }
+
+  .social-link {
+    font-size: 1.5em;
+  }
+
+  .contact-socials h5 {
+    font-size: 0.9em;
   }
 }
 
