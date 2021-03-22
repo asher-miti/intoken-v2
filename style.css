@@ -316,8 +316,8 @@ header {
 
 .about-quote {
   font-size: 2.3em;
-  width: 30%;
-  margin-top: 7%;
+  width: 32%;
+  margin-top: 5%;
   left: 14%;
   position: absolute;
 }
@@ -325,10 +325,11 @@ header {
 .about-quote p {
   font-size: 0.5em;
   font-family: var(--font-primary);
+  font-weight: 300;
 }
 
 .about-quote p:nth-of-type(2) {
-  margin-top: -25px;
+  margin-top: -30px;
 }
 
 .about-span {
@@ -336,7 +337,7 @@ header {
   background: #fff;
   display: block;
   height: 5px;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-bottom: 20px;
 }
 
@@ -346,15 +347,15 @@ header {
 
 .about-section img:nth-of-type(1) {
   width: 40%;
-  right: 9%;
-  top: 14%;
+  right: 10%;
+  top: 20.5%;
 }
 
 .about-section img:nth-of-type(2) {
-  width: 25%;
-  right: 49%;
-  top: 33%;
-  margin-top: 16%;
+  width: 19%;
+  right: 50%;
+  top: 34%;
+  margin-top: 19.5%;
 }
 
 .percentage {
@@ -372,7 +373,7 @@ header {
   top: 2%;
   left: 0;
   bottom: 0;
-  right: 18%;
+  right: 20%;
 }
 
 /* <------------------------------------------------------------> */
@@ -389,6 +390,7 @@ header {
   font-size: 2.3em;
   width: 30%;
   margin-top: 7%;
+
   left: 14%;
   position: absolute;
 }
@@ -396,10 +398,14 @@ header {
 .product-quote p {
   font-size: 0.5em;
   font-family: var(--font-primary);
+  font-weight: 300;
 }
 
 .product-quote p:nth-of-type(2) {
-  margin-top: 10px;
+  margin-top: -20px;
+}
+.product-quote p:nth-of-type(3) {
+  margin-top: -20px;
 }
 
 .product-span {
@@ -407,8 +413,8 @@ header {
   background: #fff;
   display: block;
   height: 5px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
 
 .product img {
@@ -498,7 +504,7 @@ header {
 
 .card1 p {
   font-family: var(--font-primary);
-  font-size: 1.2em;
+  font-size: 1.1em;
   opacity: 0.9;
   display: inline;
 }
@@ -781,8 +787,8 @@ html body [data-ca3_iconfont='ETmodules']::before {
 
 /* MEDIA QUERIES */
 
-/* iphone X, 11 Pro, XS, 6, 6s, 7, 8 */
-@media only screen and (width: 375px) {
+/* iphone X, 11 Pro, XS */
+@media only screen and (width: 375px) and (height: 812px) {
   header {
     padding: 20px 50px;
   }
@@ -871,7 +877,7 @@ html body [data-ca3_iconfont='ETmodules']::before {
   /* ABOUT */
 
   .about-quote {
-    top: 27%;
+    top: 18%;
     width: 76%;
     font-size: 2em;
     margin-top: 11%;
@@ -892,9 +898,9 @@ html body [data-ca3_iconfont='ETmodules']::before {
   }
 
   .about-section img:nth-of-type(1) {
-    width: 60%;
-    right: 6%;
-    top: 17%;
+    width: 54%;
+    right: 10%;
+    top: 12%;
   }
 
   .about-section img:nth-of-type(2) {
@@ -995,6 +1001,235 @@ html body [data-ca3_iconfont='ETmodules']::before {
   }
 }
 
+/* iphone 6, 6s, 7, 8, SE 2nd Gen */
+@media only screen and (width: 375px) and (height: 667px) {
+  header {
+    padding: 20px 50px;
+  }
+
+  .ca3-scroll-down-arrow {
+    display: none;
+  }
+
+  .logo-container {
+    left: -35px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  #content {
+    right: 20px;
+    top: 12px;
+    padding: 10px;
+  }
+
+  .nav .close {
+    right: 32px;
+    top: 10px;
+  }
+
+  .text {
+    position: absolute;
+    right: 8.5%;
+    margin-top: 25px;
+  }
+  .text h2 {
+    font-size: 3em;
+  }
+
+  .text p {
+    width: 300px;
+    margin-top: 20px;
+    font-size: 1em;
+  }
+
+  .image1 img {
+    width: 111px;
+  }
+
+  .image1 {
+    left: -88px;
+    top: 53px;
+  }
+
+  .image2 img {
+    width: 169px;
+  }
+
+  .image2 {
+    left: -87px;
+    top: 270px;
+  }
+
+  .image3 img {
+    width: 198px;
+  }
+
+  .image3 {
+    left: 49px;
+    top: -215px;
+  }
+
+  .image4 {
+    left: 123px;
+    top: 30px;
+  }
+
+  .image4 img {
+    width: 119px;
+  }
+
+  .ca3-scroll-down-link {
+    bottom: 100px;
+  }
+
+  .contact-container {
+    display: none;
+  }
+
+  .social {
+    display: none;
+  }
+
+  /* ABOUT */
+
+  .about-quote {
+    top: 18%;
+    width: 76%;
+    font-size: 2em;
+    margin-top: 11%;
+    left: 9%;
+  }
+
+  .about-quote p:nth-of-type(1) {
+    margin-top: 22px;
+  }
+
+  .about-quote p {
+    font-size: 0.55em;
+  }
+
+  .about-span {
+    width: 100% !important;
+    margin-top: 25px;
+  }
+
+  .about-section img:nth-of-type(1) {
+    width: 49%;
+    right: 14%;
+    top: 13%;
+  }
+
+  .about-section img:nth-of-type(2) {
+    display: none;
+  }
+
+  #box1 {
+    display: none;
+  }
+
+  /* PRODUCT */
+
+  .product-quote {
+    top: 22%;
+    width: 76%;
+    font-size: 2em;
+    margin-top: 12%;
+    left: 9%;
+  }
+
+  .product-quote p:nth-of-type(1) {
+    margin-top: 25px;
+  }
+
+  .product-quote p {
+    font-size: 0.55em;
+  }
+
+  .product-span {
+    width: 100% !important;
+    margin-top: 23px;
+  }
+
+  .product img:nth-of-type(2) {
+    width: 46%;
+    right: 14%;
+    top: 8%;
+  }
+
+  .product img:nth-of-type(1) {
+    display: none;
+  }
+
+  #box2 {
+    display: none;
+  }
+
+  /* CONTACT */
+
+  .card1 {
+    margin-left: 40px;
+    width: 81%;
+    top: 10%;
+  }
+  .card1 h2 {
+    font-size: 2.7em;
+  }
+
+  .card2 img {
+    display: none;
+  }
+
+  .p1 {
+    margin-top: 25px;
+  }
+
+  .card1 p {
+    font-size: 1.1em;
+  }
+
+  .p1 a {
+    font-size: 1.1em;
+  }
+
+  .card2 {
+    left: 11%;
+    top: 43%;
+  }
+
+  .card2 p {
+    font-size: 1.1em;
+    font-weight: 500;
+    width: 90%;
+  }
+
+  .copyright-container {
+    position: absolute;
+    top: 228%;
+    font-size: 0.8em;
+  }
+
+  .social-link {
+    font-size: 1.5em;
+  }
+
+  .contact-socials h5 {
+    font-size: 0.9em;
+    margin-top: 22px;
+  }
+
+  .contact-socials-word {
+    line-height: 27px;
+  }
+
+  .social-word {
+    margin-top: 8px;
+  }
+}
+
+/* ------------------------------------------------------------------------------------- */
 /* iphone 11 Pro Max, XS Max, 11, Xr, 6+, 6s+, 7+, 8+ */
 @media only screen and (width: 414px) {
   html,
@@ -1003,6 +1238,10 @@ html body [data-ca3_iconfont='ETmodules']::before {
   }
   header {
     padding: 20px 50px;
+  }
+
+  .ca3-scroll-down-arrow {
+    display: none;
   }
 
   .logo-container {
@@ -1090,7 +1329,7 @@ html body [data-ca3_iconfont='ETmodules']::before {
   /* ABOUT */
 
   .about-quote {
-    top: 27%;
+    top: 18%;
     width: 77%;
     font-size: 2em;
     margin-top: 11%;
@@ -1111,9 +1350,9 @@ html body [data-ca3_iconfont='ETmodules']::before {
   }
 
   .about-section img:nth-of-type(1) {
-    width: 56%;
+    width: 50%;
     right: 10%;
-    top: 18%;
+    top: 12%;
   }
 
   .about-section img:nth-of-type(2) {
@@ -1315,15 +1554,15 @@ html body [data-ca3_iconfont='ETmodules']::before {
   }
 
   .about-section img:nth-of-type(1) {
-    width: 49%;
-    right: 15%;
-    top: 13%;
+    width: 47%;
+    right: 19%;
+    top: 12%;
   }
 
   .about-section img:nth-of-type(2) {
-    width: 44%;
-    right: 7%;
-    top: 58%;
+    width: 35%;
+    right: 20%;
+    top: 66%;
   }
 
   #box1 {
@@ -1360,9 +1599,9 @@ html body [data-ca3_iconfont='ETmodules']::before {
   }
 
   .product img:nth-of-type(1) {
-    width: 44%;
-    right: 9%;
-    top: 71%;
+    width: 42%;
+    right: 11%;
+    top: 75%;
   }
 
   #box2 {
@@ -1430,6 +1669,467 @@ html body [data-ca3_iconfont='ETmodules']::before {
 
 /* ------------------------------------------------------------------------------------- */
 
+/* iPad Pro - All Generations 12.9" */
+@media only screen and (width: 1024px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    padding: 35px 75px;
+  }
+
+  .logo-container {
+    left: -30px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  #content {
+    right: 43px;
+    top: 35px;
+    padding: 10px;
+  }
+
+  .nav .close {
+    right: 32px;
+    top: 10px;
+  }
+
+  .text {
+    position: absolute;
+    right: 24.5%;
+  }
+  .text h2 {
+    font-size: 5em;
+  }
+
+  .text p {
+    width: 475px;
+    margin-top: 28px;
+    font-size: 1.1em;
+  }
+
+  .image1 {
+    left: 65px;
+    top: 79px;
+  }
+
+  .image1 img {
+    width: 22%;
+  }
+
+  .image2 {
+    left: -12px;
+    top: 381px;
+  }
+
+  .image2 img {
+    width: 38%;
+  }
+
+  .image3 {
+    left: 425px;
+    top: -349px;
+  }
+
+  .image3 img {
+    width: 40%;
+  }
+
+  .image4 {
+    left: 526px;
+    top: -29px;
+  }
+
+  .image4 img {
+    width: 30%;
+  }
+
+  .ca3-scroll-down-link {
+    bottom: 50px;
+  }
+
+  .contact-container {
+    display: none;
+  }
+
+  .social {
+    display: none;
+  }
+
+  /* ABOUT */
+
+  .about-quote {
+    top: 30%;
+    width: 64%;
+    font-size: 2.3em;
+    left: 16%;
+  }
+
+  .about-quote p:nth-of-type(1) {
+    margin-top: 40px;
+  }
+
+  .about-quote p {
+    font-size: 0.55em;
+  }
+
+  .about-span {
+    width: 100% !important;
+    margin-top: 25px;
+  }
+
+  .about-section img:nth-of-type(1) {
+    width: 47%;
+    right: 19%;
+    top: 12%;
+  }
+
+  .about-section img:nth-of-type(2) {
+    width: 36%;
+    right: 12%;
+    top: 58%;
+  }
+
+  #box1 {
+    display: none;
+  }
+
+  /* PRODUCT */
+
+  .product-quote {
+    top: 23.5%;
+    width: 67%;
+    font-size: 2.3em;
+    margin-top: 12%;
+    left: 16%;
+  }
+
+  .product-quote p:nth-of-type(1) {
+    margin-top: 40px;
+  }
+
+  .product-quote p {
+    font-size: 0.55em;
+  }
+
+  .product-span {
+    width: 100% !important;
+    margin-top: 23px;
+  }
+
+  .product img:nth-of-type(2) {
+    width: 45%;
+    right: 13%;
+    top: -1%;
+  }
+
+  .product img:nth-of-type(1) {
+    width: 42%;
+    right: 9%;
+    top: 70%;
+  }
+
+  #box2 {
+    display: none;
+  }
+
+  /* CONTACT */
+
+  .card1 {
+    width: 64%;
+    top: 14%;
+    left: -2%;
+  }
+
+  .card1 h5 {
+    font-size: 1.4em;
+  }
+  .card1 h2 {
+    font-size: 4.4em;
+  }
+
+  .card2 img {
+    width: 59%;
+  }
+
+  .p1 {
+    margin-top: 25px;
+  }
+
+  .card1 p {
+    font-size: 1.1em;
+  }
+
+  .p1 a {
+    font-size: 1.1em;
+  }
+
+  .card2 {
+    left: 8%;
+    top: 33%;
+  }
+
+  .card2 p {
+    font-size: 1.1em;
+    width: 73%;
+  }
+
+  .copyright-container {
+    position: absolute;
+    top: 510%;
+    right: -15%;
+    font-size: 1em;
+  }
+
+  .social-link {
+    font-size: 2em;
+  }
+
+  .contact-socials h5 {
+    font-size: 1.2em;
+    margin: 35px 0 15px 0;
+  }
+}
+
+/* ------------------------------------------------------------------------------------- */
+
 /* iphone 12 Pro Max - 428px */
 /* iphone 12 - 390 px */
 /* iphone 12 mini - 360px */
+
+/* BlackBerry Z30, Nexus 5 */
+@media only screen and (width: 360px) {
+  header {
+    padding: 20px 50px;
+  }
+
+  .ca3-scroll-down-arrow {
+    display: none;
+  }
+
+  .logo-container {
+    left: -35px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  #content {
+    right: 16px;
+    top: 12px;
+    padding: 10px;
+  }
+
+  .nav .close {
+    right: 32px;
+    top: 10px;
+  }
+
+  .nav {
+    padding-top: 143px;
+  }
+
+  .text {
+    position: absolute;
+    right: 8.5%;
+    margin-top: 25px;
+  }
+  .text h2 {
+    font-size: 3em;
+  }
+
+  .text p {
+    width: 300px;
+    margin-top: 20px;
+    font-size: 1em;
+  }
+
+  .image1 img {
+    width: 111px;
+  }
+
+  .image1 {
+    left: -88px;
+    top: 53px;
+  }
+
+  .image2 img {
+    width: 163px;
+  }
+
+  .image2 {
+    left: -87px;
+    top: 259px;
+  }
+
+  .image3 img {
+    width: 174px;
+  }
+
+  .image3 {
+    left: 53px;
+    top: -215px;
+  }
+
+  .image4 {
+    left: 123px;
+    top: 30px;
+  }
+
+  .image4 img {
+    width: 107px;
+  }
+
+  .ca3-scroll-down-link {
+    bottom: 100px;
+  }
+
+  .contact-container {
+    display: none;
+  }
+
+  .social {
+    display: none;
+  }
+
+  /* ABOUT */
+
+  .about-quote {
+    top: 18%;
+    width: 76%;
+    font-size: 1.8em;
+    margin-top: 11%;
+    left: 9%;
+  }
+
+  .about-quote p:nth-of-type(1) {
+    margin-top: 22px;
+  }
+
+  .about-quote p {
+    font-size: 0.55em;
+  }
+
+  .about-span {
+    width: 100% !important;
+    margin-top: 25px;
+  }
+
+  .about-section img:nth-of-type(1) {
+    width: 49%;
+    right: 14%;
+    top: 13%;
+  }
+
+  .about-section img:nth-of-type(2) {
+    display: none;
+  }
+
+  #box1 {
+    display: none;
+  }
+
+  /* PRODUCT */
+
+  .product-quote {
+    top: 22%;
+    width: 76%;
+    font-size: 1.8em;
+    margin-top: 12%;
+    left: 9%;
+  }
+
+  .product-quote p:nth-of-type(1) {
+    margin-top: 25px;
+  }
+
+  .product-quote p {
+    font-size: 0.55em;
+  }
+
+  .product-span {
+    width: 100% !important;
+    margin-top: 23px;
+  }
+
+  .product img:nth-of-type(2) {
+    width: 46%;
+    right: 14%;
+    top: 8%;
+  }
+
+  .product img:nth-of-type(1) {
+    display: none;
+  }
+
+  #box2 {
+    display: none;
+  }
+
+  /* CONTACT */
+
+  .card1 {
+    margin-left: 40px;
+    width: 81%;
+    top: 10%;
+  }
+  .card1 h2 {
+    font-size: 2.5em;
+  }
+
+  .card2 img {
+    display: none;
+  }
+
+  .p1 {
+    margin-top: 25px;
+    font-size: ;
+  }
+
+  .card1 p {
+    font-size: 1.1em;
+  }
+
+  .p1 a {
+    font-size: 1.1em;
+  }
+
+  .card2 {
+    left: 11%;
+    top: 43%;
+  }
+
+  .card2 p {
+    font-size: 1.1em;
+    font-weight: 500;
+    width: 90%;
+  }
+
+  .copyright-container {
+    position: absolute;
+    top: 228%;
+    font-size: 0.8em;
+  }
+
+  .social-link {
+    font-size: 1.5em;
+  }
+
+  .contact-socials h5 {
+    font-size: 0.9em;
+    margin-top: 22px;
+  }
+
+  .contact-socials-word {
+    line-height: 27px;
+  }
+
+  .social-word {
+    margin-top: 8px;
+  }
+}
