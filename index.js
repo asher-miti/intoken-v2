@@ -10,6 +10,15 @@ function closeSlideMenu() {
   document.getElementById('content').style.marginLeft = '0';
 }
 
+const navbar = document.querySelector('.navbar');
+window.onscroll = () => {
+  if (window.scrollY > 50) {
+    navbar.classList.add('nav-active');
+  } else {
+    navbar.classList.remove('nav-active');
+  }
+};
+
 // About Page
 let tl = new TimelineMax({ onUpdate: updatePercentage });
 let tl2 = new TimelineMax();
