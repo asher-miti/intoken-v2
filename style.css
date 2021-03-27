@@ -1013,7 +1013,15 @@ html body [data-ca3_iconfont='ETmodules']::before {
 /* iphone 6, 6s, 7, 8, SE 2nd Gen */
 @media only screen and (width: 375px) and (height: 667px) {
   header {
-    padding: 20px 50px;
+    padding: 10px 50px;
+  }
+
+  header.navbar {
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-active {
+    background-color: black;
   }
 
   .ca3-scroll-down-arrow {
@@ -1022,6 +1030,7 @@ html body [data-ca3_iconfont='ETmodules']::before {
 
   .logo-container {
     left: -35px;
+    top: 5px;
   }
 
   .logo {
@@ -1030,13 +1039,17 @@ html body [data-ca3_iconfont='ETmodules']::before {
 
   #content {
     right: 20px;
-    top: 12px;
+    top: 9px;
     padding: 10px;
   }
 
   .nav .close {
     right: 32px;
     top: 10px;
+  }
+
+  .nav {
+    padding-top: 169px;
   }
 
   .text {
@@ -1246,7 +1259,15 @@ html body [data-ca3_iconfont='ETmodules']::before {
     overflow-x: hidden;
   }
   header {
-    padding: 20px 50px;
+    padding: 10px 50px;
+  }
+
+  header.navbar {
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-active {
+    background-color: black;
   }
 
   .ca3-scroll-down-arrow {
@@ -1255,6 +1276,7 @@ html body [data-ca3_iconfont='ETmodules']::before {
 
   .logo-container {
     left: -35px;
+    top: 5px;
   }
 
   .logo {
@@ -1263,13 +1285,17 @@ html body [data-ca3_iconfont='ETmodules']::before {
 
   #content {
     right: 20px;
-    top: 12px;
+    top: 9px;
     padding: 10px;
   }
 
   .nav .close {
     right: 32px;
     top: 10px;
+  }
+
+  .nav {
+    padding-top: 185px;
   }
 
   .text {
@@ -2375,7 +2401,15 @@ html body [data-ca3_iconfont='ETmodules']::before {
     overflow-x: hidden;
   }
   header {
-    padding: 20px 50px;
+    padding: 10px 50px;
+  }
+
+  header.navbar {
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-active {
+    background-color: black;
   }
 
   .ca3-scroll-down-arrow {
@@ -2384,6 +2418,7 @@ html body [data-ca3_iconfont='ETmodules']::before {
 
   .logo-container {
     left: -35px;
+    top: 5px;
   }
 
   .logo {
@@ -2392,7 +2427,7 @@ html body [data-ca3_iconfont='ETmodules']::before {
 
   #content {
     right: 20px;
-    top: 12px;
+    top: 8px;
     padding: 10px;
   }
 
@@ -2608,15 +2643,23 @@ html body [data-ca3_iconfont='ETmodules']::before {
     overflow-x: hidden;
   }
   header {
-    padding: 20px 50px;
+    padding: 10px 50px;
   }
 
+  header.navbar {
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-active {
+    background-color: black;
+  }
   .ca3-scroll-down-arrow {
     display: none;
   }
 
   .logo-container {
     left: -35px;
+    top: 5px;
   }
 
   .logo {
@@ -2625,7 +2668,7 @@ html body [data-ca3_iconfont='ETmodules']::before {
 
   #content {
     right: 20px;
-    top: 12px;
+    top: 9px;
     padding: 10px;
   }
 
@@ -2842,7 +2885,15 @@ html body [data-ca3_iconfont='ETmodules']::before {
     overflow-x: hidden;
   }
   header {
-    padding: 20px 50px;
+    padding: 10px 50px;
+  }
+
+  header.navbar {
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-active {
+    background-color: black;
   }
 
   .ca3-scroll-down-arrow {
@@ -2851,6 +2902,7 @@ html body [data-ca3_iconfont='ETmodules']::before {
 
   .logo-container {
     left: -35px;
+    top: 5px;
   }
 
   .logo {
@@ -2859,7 +2911,7 @@ html body [data-ca3_iconfont='ETmodules']::before {
 
   #content {
     right: 20px;
-    top: 12px;
+    top: 9px;
     padding: 10px;
   }
 
@@ -3075,7 +3127,15 @@ html body [data-ca3_iconfont='ETmodules']::before {
     overflow-x: hidden;
   }
   header {
-    padding: 20px 50px;
+    padding: 10px 50px;
+  }
+
+  header.navbar {
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-active {
+    background-color: black;
   }
 
   .ca3-scroll-down-arrow {
@@ -3084,6 +3144,7 @@ html body [data-ca3_iconfont='ETmodules']::before {
 
   .logo-container {
     left: -35px;
+    top: 5px;
   }
 
   .logo {
@@ -3092,13 +3153,17 @@ html body [data-ca3_iconfont='ETmodules']::before {
 
   #content {
     right: 20px;
-    top: 12px;
+    top: 9px;
     padding: 10px;
   }
 
   .nav .close {
     right: 32px;
     top: 10px;
+  }
+
+  .nav {
+    padding-top: 165px;
   }
 
   .text {
@@ -3319,15 +3384,23 @@ html body [data-ca3_iconfont='ETmodules']::before {
 /* BlackBerry Z30, Nexus 5 */
 @media only screen and (width: 360px) {
   header {
-    padding: 20px 50px;
+    padding: 10px 50px;
   }
 
+  header.navbar {
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-active {
+    background-color: black;
+  }
   .ca3-scroll-down-arrow {
     display: none;
   }
 
   .logo-container {
     left: -35px;
+    top: 6px;
   }
 
   .logo {
@@ -3336,7 +3409,7 @@ html body [data-ca3_iconfont='ETmodules']::before {
 
   #content {
     right: 16px;
-    top: 12px;
+    top: 10px;
     padding: 10px;
   }
 
