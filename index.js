@@ -99,3 +99,11 @@ function updatePercentage() {
   tlp.progress();
   console.log(tlp.progress());
 }
+
+// var my_element = document.getElementById('product');
+
+// my_element.scrollIntoView({
+//   behavior: 'smooth',
+//   block: 'center',
+//   inline: 'nearest',
+// });

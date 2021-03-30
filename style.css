@@ -806,6 +806,10 @@ html body [data-ca3_iconfont='ETmodules']::before {
     top: 4px;
   }
 
+  .ca3-scroll-down-arrow {
+    display: none;
+  }
+
   .logo {
     width: 80px;
   }
@@ -831,7 +835,7 @@ html body [data-ca3_iconfont='ETmodules']::before {
 
   .text p {
     width: 300px;
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 1.1em;
   }
 
@@ -894,11 +898,18 @@ html body [data-ca3_iconfont='ETmodules']::before {
   }
 
   .about-quote p:nth-of-type(1) {
-    margin-top: 40px;
+    margin-top: 30px;
+  }
+  .about-quote p:nth-of-type(2) {
+    margin-top: -10px;
+  }
+
+  .about-quote p:nth-of-type(3) {
+    margin-top: -10px;
   }
 
   .about-quote p {
-    font-size: 0.55em;
+    font-size: 0.6em;
   }
 
   .about-span {
@@ -923,7 +934,7 @@ html body [data-ca3_iconfont='ETmodules']::before {
   /* PRODUCT */
 
   .product-quote {
-    top: 22%;
+    top: 52%;
     width: 76%;
     font-size: 2em;
     margin-top: 12%;
@@ -935,7 +946,7 @@ html body [data-ca3_iconfont='ETmodules']::before {
   }
 
   .product-quote p {
-    font-size: 0.55em;
+    font-size: 0.6em;
   }
 
   .product-span {
@@ -946,7 +957,7 @@ html body [data-ca3_iconfont='ETmodules']::before {
   .product img:nth-of-type(2) {
     width: 56%;
     right: 6%;
-    top: 6%;
+    top: 26%;
   }
 
   .product img:nth-of-type(1) {
@@ -2470,7 +2481,7 @@ html body [data-ca3_iconfont='ETmodules']::before {
 
   .image2 {
     left: -82px;
-    top: 294px;
+    top: 300px;
   }
 
   .image3 img {
@@ -2483,8 +2494,8 @@ html body [data-ca3_iconfont='ETmodules']::before {
   }
 
   .image4 {
-    left: 150px;
-    top: 39px;
+    left: 137px;
+    top: 55px;
   }
 
   .image4 img {
@@ -2516,9 +2527,15 @@ html body [data-ca3_iconfont='ETmodules']::before {
   .about-quote p:nth-of-type(1) {
     margin-top: 40px;
   }
+  .about-quote p:nth-of-type(2) {
+    margin-top: 2px;
+  }
+  .about-quote p:nth-of-type(3) {
+    margin-top: 5px;
+  }
 
   .about-quote p {
-    font-size: 0.6em;
+    font-size: 0.65em;
   }
 
   .about-span {
@@ -2555,7 +2572,7 @@ html body [data-ca3_iconfont='ETmodules']::before {
   }
 
   .product-quote p {
-    font-size: 0.6em;
+    font-size: 0.65em;
   }
 
   .product-span {
@@ -2617,7 +2634,7 @@ html body [data-ca3_iconfont='ETmodules']::before {
 
   .copyright-container {
     position: absolute;
-    top: 294%;
+    top: 280%;
     font-size: 0.8em;
   }
 
